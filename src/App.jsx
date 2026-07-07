@@ -50,11 +50,20 @@ function App() {
   const showArtifact = (index) => {
     setSelectedArtifact(index)
     setView('artifact')
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
   }
 
   useEffect(() => {
     setImageIndex(0)
   }, [selectedArtifact])
+
+  useEffect(() => {
+    if (view === 'artifact') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [view, selectedArtifact])
 
   const goToArtifacts = (e) => {
     e.preventDefault()
