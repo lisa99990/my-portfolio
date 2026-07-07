@@ -8,6 +8,9 @@ import img4 from './assets/Evolution of AI 4.jpg'
 const artifacts = [
   {
     title: 'Evolution of AI (1943–2026): A Historical Timeline',
+    preview:
+      'A researched, visually organized timeline tracing AI from its origins in 1943 to today’s reasoning-focused systems.',
+    highlights: ['Research-driven', 'Visual storytelling', 'AI history'],
     introduction:
       "Artificial Intelligence did not emerge overnight, it is the product of over eighty years of theoretical breakthroughs, technical failures, funding collapses, and periodic leaps forward. This artifact presents a researched, visually organized timeline tracing AI's development from its mathematical origins in 1943 through the current era of autonomous, reasoning-capable AI systems in 2026.",
     description:
@@ -294,10 +297,25 @@ function App() {
                   type="button"
                   className="artifact-card"
                   onClick={() => showArtifact(index)}
+                  aria-label={`Open details for ${artifact.title}`}
                 >
-                  <span className="artifact-index">0{index + 1}</span>
-                  <h3>{artifact.title}</h3>
-                  <p>{artifact.objective}</p>
+                  <div className="artifact-card-content">
+                    <div className="artifact-card-top">
+                      <span className="artifact-pill">Featured artifact</span>
+                      <span className="artifact-pill accent">Click to explore</span>
+                    </div>
+                    <span className="artifact-index">0{index + 1}</span>
+                    <h3>{artifact.title}</h3>
+                    <p className="artifact-preview">{artifact.preview}</p>
+                    <div className="artifact-tags">
+                      {artifact.highlights?.map((highlight) => (
+                        <span key={highlight} className="artifact-tag">
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                    <span className="artifact-cta">View full details →</span>
+                  </div>
                 </button>
               ))}
             </div>
