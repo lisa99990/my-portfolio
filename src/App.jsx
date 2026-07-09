@@ -4,6 +4,7 @@ import img1 from './assets/Evolution of AI 1.jpg'
 import img2 from './assets/Evolution of AI 2.jpg'
 import img3 from './assets/Evolution of AI 3.jpg'
 import img4 from './assets/Evolution of AI 4.jpg'
+import pdfMLvsDL from './assets/Machine Learning vs Deep Learning.pdf'
 
 const artifacts = [
   {
@@ -38,7 +39,32 @@ const artifacts = [
     ],
     images: [img1, img2, img3, img4],
   },
-  
+  {
+    title: 'Comparative Analysis of Machine Learning and Deep Learning Applications',
+    preview:
+      'A formal APA-style report comparing traditional machine learning and deep learning through real-world applications in housing and autonomous navigation.',
+    highlights: ['APA report', 'AI comparison', 'Practical analysis'],
+    introduction:
+      'This report explores the fundamental distinctions between traditional machine learning (ML) and deep learning (DL), two pillars of modern artificial intelligence. It contrasts their operational approaches, data requirements, and architectural complexities, providing a foundational understanding for evaluating AI methodologies in practical scenarios.',
+    description:
+      'The artifact is a formal, APA-formatted report that evaluates two distinct real-world applications: house price prediction (utilizing traditional ML) and autonomous vehicle navigation (utilizing DL). It includes a detailed justification of why specific algorithms are suited to particular problem domains based on data structure and task complexity.',
+    objective:
+      'The objective was to synthesize theoretical knowledge of AI frameworks with practical application analysis, demonstrating the ability to select the appropriate technological approach based on problem-specific constraints.',
+    process:
+      'The process involved conducting a comparative study of the definitions, approaches, and real-world examples of both ML and DL. I researched industry use cases to justify architectural choices, drafted the report following APA 7 guidelines, and refined the logical arguments to explain the technical incompatibility of mismatched approaches.',
+    tools:
+      'Generative AI was used to brainstorm, structure content, and format the technical document. Reference materials included academic sources, the AIMultiple blog, and Fireship video summaries.',
+    value:
+      'Unique Value: Unlike a simple summary, this artifact provides a comparative framework that highlights not only why a model works, but why alternative models are fundamentally unsuitable for specific tasks, offering a deeper analytical perspective.\n\nRelevance: This is highly relevant to my career as a software developer and student of data analytics, as it demonstrates technical literacy in modern AI architectures and the ability to contribute to informed, data-driven strategy in a corporate environment.',
+    pdf: pdfMLvsDL,
+    references: [
+      'Dilmegani, C. (2026, March 10). Top 50 deep learning use cases & case studies. AIMultiple.',
+      'Fireship. (2021, September 9). Machine learning explained in 100 seconds [Video]. YouTube.',
+      'Source Material. (n.d.). Introduction to machine learning and deep learning: Definitions, approaches, and examples.',
+      'Ji-Hyun, S., Young-Hum, C., & Young-Hum, C. (2022). Machine-Learning-Based Coefficient of Performance Prediction Model for Heat Pump Systems. Applied Sciences, 12(1), 362.',
+      'Zhang, M., Zhang, M., Amaitik, N., Wang, Z., Xu, Y., Xu, Y., Maisuradze, A., Peschl, M., & Tzovaras, D. (2022). Predictive Maintenance for Remanufacturing Based on Hybrid-Driven Remaining Useful Life Prediction. Applied Sciences, 12(7), 3218.'
+    ],
+  },
 ]
 
 function App() {
@@ -105,6 +131,14 @@ function App() {
                   <strong>🔗 View the Timeline:</strong>{' '}
                   <a href={activeArtifact.link} target="_blank" rel="noreferrer">
                     {activeArtifact.link}
+                  </a>
+                </p>
+              )}
+              {activeArtifact.pdf && (
+                <p className="artifact-link">
+                  <strong>🔗 View the PDF:</strong>{' '}
+                  <a href={activeArtifact.pdf} target="_blank" rel="noreferrer">
+                    Machine Learning vs Deep Learning
                   </a>
                 </p>
               )}
