@@ -135,12 +135,30 @@ function App() {
                 </p>
               )}
               {activeArtifact.pdf && (
-                <p className="artifact-link">
-                  <strong>🔗 View the PDF:</strong>{' '}
-                  <a href={activeArtifact.pdf} target="_blank" rel="noreferrer">
-                    Machine Learning vs Deep Learning
-                  </a>
-                </p>
+                <div className="artifact-pdf-panel">
+                  <div className="artifact-pdf-panel-header">
+                    <div>
+                      <p className="artifact-pdf-label">PDF preview</p>
+                      <h4>Machine Learning vs Deep Learning</h4>
+                    </div>
+                    <a
+                      className="pdf-view-btn"
+                      href={activeArtifact.pdf}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open full PDF
+                    </a>
+                  </div>
+                  <div className="artifact-pdf-embed">
+                    <iframe
+                      src={`${activeArtifact.pdf}#toolbar=0&navpanes=0`}
+                      title="Machine Learning vs Deep Learning PDF"
+                      frameBorder="0"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               )}
 
               {activeArtifact.images && activeArtifact.images.length > 0 && (
