@@ -5,6 +5,7 @@ import img2 from './assets/Evolution of AI 2.jpg'
 import img3 from './assets/Evolution of AI 3.jpg'
 import img4 from './assets/Evolution of AI 4.jpg'
 import pdfMLvsDL from './assets/Machine Learning vs Deep Learning.pdf'
+import pdfAdapting from './assets/Adapting to Challenges PDF.pdf'
 
 const artifacts = [
   {
@@ -27,7 +28,7 @@ const artifacts = [
     link: 'https://canva.link/zjrlt0ojs4hkiox',
     references: [
       'Bender, E., & Our World in Data. (2022, December 6). A brief history of artificial intelligence. Our World in Data. https://ourworldindata.org/brief-history-of-ai',
-      'Coursera. (2026, April 22). The history of AI: A timeline of artificial intelligence. https://www.coursera.org/articles/history-of-ai',
+      'Coursera. (2026, April 22). The history of artificial intelligence. https://www.coursera.org/articles/history-of-ai',
       'IBM. (n.d.). The history of artificial intelligence. https://www.ibm.com/think/topics/history-of-artificial-intelligence',
       'IEEE Computer Society. (2025, March 11). The evolution of AI: From foundations to future prospects. https://www.computer.org/publications/tech-news/research/evolution-of-ai',
       'McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955). A proposal for the Dartmouth Summer Research Project on Artificial Intelligence. Dartmouth College.',
@@ -63,6 +64,31 @@ const artifacts = [
       'Source Material. (n.d.). Introduction to machine learning and deep learning: Definitions, approaches, and examples.',
       'Ji-Hyun, S., Young-Hum, C., & Young-Hum, C. (2022). Machine-Learning-Based Coefficient of Performance Prediction Model for Heat Pump Systems. Applied Sciences, 12(1), 362.',
       'Zhang, M., Zhang, M., Amaitik, N., Wang, Z., Xu, Y., Xu, Y., Maisuradze, A., Peschl, M., & Tzovaras, D. (2022). Predictive Maintenance for Remanufacturing Based on Hybrid-Driven Remaining Useful Life Prediction. Applied Sciences, 12(7), 3218.'
+    ],
+  },
+  {
+    title: 'Learning from the Biblical Leaders in Facing Leadership Challenges through Faith',
+    preview:
+      'A reflective essay connecting Moses (Exodus 3:11–12) and Esther (Esther 4:14) to modern leadership challenges, grounded in practical AI project experience.',
+    highlights: ['Reflective essay', 'Biblical leadership', 'Leadership development', 'Faith-based'],
+    pdf: pdfAdapting,
+    pdfTitle: 'Adapting to Challenges',
+    introduction:
+      "This artifact reflects my learning journey on how various biblical leaders managed to solve different leadership issues with the help of their faith, wisdom, and resilience. The focus will be on the examples of Moses and Esther and how their stories are relevant to modern-day leadership problems.",
+    description:
+      "The main task of this artifact was to reflect upon various leadership situations and relate them to the two biblical passages: Exodus 3:11-12 and Esther 4:14. It was important to connect the stories of the biblical leaders to my own leadership experience in leading an AI consulting project and preparing for my future career endeavors. I show how the ability to seek God’s wisdom, adapt, and make brave decisions could enhance one’s performance as a leader.",
+    objective:
+      "To apply biblical leadership concepts to real-life situations; to reflect on personal leadership growth due to faith and self-awareness; to demonstrate that courage, adaptability, and strategic thinking are vital elements of effective leadership; and to improve writing and reflective analysis skills.",
+    process:
+      '1. Analyzing the biblical references to Esther and Moses; 2. Reflecting on personal situations connected with teamwork, decision-making, and career development; 3. Linking lessons from Scripture with personal leadership challenges; 4. Formulating responses that show critical thought and practical understanding of faith; 5. Revising the assignment to comply with APA 7 formatting.',
+    tools:
+      'Microsoft Word; Bible Gateway (NIV); Claude AI (grammar correction); ChatGPT (idea generation)',
+    value:
+      "Unique Value: Demonstrates the capability to apply faith-based leadership principles in practice by focusing on application rather than summary. Relevance: Highlights adaptability, ethical decision-making, and communication as critical leadership skills applicable to modern business and AI project contexts.",
+    references: [
+      'Biblica. (2011). Holy Bible, New International Version. Zondervan. https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/',
+      'Northouse, P. G. (2022). Leadership: Theory and practice (9th ed.). SAGE Publications.',
+      'Yukl, G. (2020). Leadership in organizations (9th ed.). Pearson.'
     ],
   },
 ]
@@ -136,11 +162,11 @@ function App() {
               )}
               {activeArtifact.pdf && (
                 <div className="artifact-pdf-panel">
-                  <div className="artifact-pdf-panel-header">
-                    <div>
-                      <p className="artifact-pdf-label">PDF preview</p>
-                      <h4>Machine Learning vs Deep Learning</h4>
-                    </div>
+                      <div className="artifact-pdf-panel-header">
+                        <div>
+                          <p className="artifact-pdf-label">PDF preview</p>
+                          <h4>{activeArtifact.pdfTitle || 'PDF preview'}</h4>
+                        </div>
                     <a
                       className="pdf-view-btn"
                       href={activeArtifact.pdf}
