@@ -6,6 +6,7 @@ import img3 from './assets/Evolution of AI 3.jpg'
 import img4 from './assets/Evolution of AI 4.jpg'
 import pdfMLvsDL from './assets/Machine Learning vs Deep Learning.pdf'
 import pdfAdapting from './assets/Adapting to Challenges PDF.pdf'
+import pdfCommunication from './assets/pdfCommunication.pdf'
 
 const artifacts = [
   {
@@ -91,6 +92,37 @@ const artifacts = [
       'Yukl, G. (2020). Leadership in organizations (9th ed.). Pearson.'
     ],
   },
+  {
+  title: 'Effective Communication in Leadership: Building Clarity, Trust, and Team Alignment',
+  preview:
+    'A reflective essay exploring the importance of clear communication in leadership by connecting biblical teachings with a real-world software development experience.',
+  highlights: [
+    'Leadership communication',
+    'Biblical reflection',
+    'Team collaboration',
+    'Professional development'
+  ],
+  pdf: pdfCommunication,
+  pdfTitle: 'Effective Communication in Leadership',
+  introduction:
+    "This artifact reflects on the importance of effective communication in leadership and how clear, intentional messaging promotes trust, collaboration, and team alignment. Drawing from the biblical teachings in 1 Corinthians 14:8–9 and Genesis 11:6–7, I examine my communication style, identify areas for improvement, and relate these lessons to a real-world software development project where ineffective communication led to confusion and delays.",
+  description:
+    "The primary focus of this artifact was to evaluate my communication practices as a leader and understand how communication influences team performance. I reflected on a workplace experience where changing software requirements were not communicated consistently, resulting in duplicated work and project delays. By connecting this experience with biblical principles, I demonstrate how clear communication, active listening, documentation, and feedback can strengthen leadership effectiveness and improve organizational outcomes.",
+  objective:
+    "To evaluate and improve my personal communication style; to understand how clear communication fosters trust, collaboration, and shared understanding within teams; to apply biblical leadership principles to professional communication practices; and to develop practical strategies for preventing misunderstandings and improving team alignment.",
+  process:
+    "1. Studied the biblical passages from 1 Corinthians 14:8–9 and Genesis 11:6–7; 2. Reflected on my communication style and leadership experiences; 3. Analyzed a software development project where inconsistent communication caused confusion; 4. Identified practical strategies such as active listening, documentation, feedback loops, and regular team check-ins; 5. Connected biblical principles with professional leadership practices and revised the reflection following APA 7 formatting.",
+  tools:
+    "Microsoft Word; Bible Gateway (NIV); ChatGPT (brainstorming and grammar improvement); APA 7th Edition Guidelines",
+  value:
+    "Unique Value: Demonstrates the ability to integrate biblical leadership principles with practical workplace experiences, emphasizing communication as both a leadership competency and a means of building trust and accountability. Relevance: Highlights communication, collaboration, active listening, and team alignment as essential leadership skills applicable to software engineering, project management, Agile development, and cross-functional teamwork.",
+  references: [
+    'Biblica. (2011). Holy Bible, New International Version. Zondervan. https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/',
+    'Covey, S. R. (2020). The 7 Habits of Highly Effective People (30th Anniversary ed.). Simon & Schuster.',
+    'Maxwell, J. C. (2007). The 21 Irrefutable Laws of Leadership (10th Anniversary ed.). Thomas Nelson.',
+    'Northouse, P. G. (2022). Leadership: Theory and Practice (9th ed.). SAGE Publications.'
+  ],
+},
 ]
 
 function App() {
