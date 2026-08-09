@@ -7,6 +7,8 @@ import img4 from './assets/Evolution of AI 4.jpg'
 import pdfMLvsDL from './assets/Machine Learning vs Deep Learning.pdf'
 import pdfAdapting from './assets/Adapting to Challenges PDF.pdf'
 import pdfCommunication from './assets/pdfCommunication.pdf'
+import pdfResearch from './assets/AI Model Verification and Validation .pdf'
+import pdfNewsletter from './assets/Newsletter on Commercial Usage of AI.pdf'
 
 const artifacts = [
   {
@@ -121,6 +123,57 @@ const artifacts = [
     'Covey, S. R. (2020). The 7 Habits of Highly Effective People (30th Anniversary ed.). Simon & Schuster.',
     'Maxwell, J. C. (2007). The 21 Irrefutable Laws of Leadership (10th Anniversary ed.). Thomas Nelson.',
     'Northouse, P. G. (2022). Leadership: Theory and Practice (9th ed.). SAGE Publications.'
+  ],
+},
+{
+  title: 'Developing Retrieval-Augmented Generation Systems from PDFs: A Case Study Analysis',
+  preview:
+    'A formal case-study analysis of a RAG-based LLM project that examines data preparation, model selection, validation, ethics, and monitoring.',
+  highlights: ['RAG systems', 'Case study', 'Responsible AI', 'LLM evaluation'],
+  pdf: pdfResearch,
+  pdfTitle: 'AI Model Verification and Validation',
+  introduction:
+    'This document investigates the building process and assessment of a Retrieval-Augmented Generation (RAG) system, where PDF files serve as the external source of knowledge, and checks the ways that the project has implemented steps of data preprocessing, model picking, as well as validation, ethics, and monitoring while contrasting them with mandatory machine-learning practices.',
+  description:
+    'The artifact presents a formal case-study analysis of the exploration done by Khan et al. (2024) that discusses the development of RAG-based LLM systems with the help of PDF files. In particular, it discusses the conversion of PDF files into structured texts, segmentation of documents, the taking of vector embeddings, the application of semantic retrieval, alongside working with GPT and Llama models. It investigates the project quality testing of delivered results, application of ethical measures, as well as keeping the knowledge base up-to-date.',
+  objective:
+    'The aim was to study a documented real-life AI initiative and analyze how its growth phase dealt with data preparation, model selection, validation, performance examination, ethics, and deployment of the usage. The study was also expected to discover the strengths and weaknesses of the used strategy and find the methods which can be employed in other AI and machine learning projects.',
+  process:
+    'The methodology was based on a review of the provided RAG case study and an analysis of the phases of its development. I analyzed the document preprocessing and embedding phase, justified the use of RAG with GPT and Llama models, and researched the qualitative methods employed for assessing the quality of the response and retrieval relevance of the information. As a result, I compared the provided practices with course recommendations and found areas for improvement in quantitative evaluation, analysis of fairness, protection of privacy, and monitoring.',
+  tools:
+    'The work studied the technology of Retrieval-Augmented Generation, based on the use of large language models, OAI GPT models, open-source Llama models, vector embeddings, semantic similarity search, vector databases, and PDF document processing. There were employed various Generative AI technologies throughout the report writing process, including Claude used for paragraph formatting and grammar checking.',
+  value:
+    'Unique Value: This document serves not only as an ordinary summary of the Generative AI project but rather provides deep understanding of all the life cycle of AI, starting from data preparation and architecture choice and ending with validation, ethical safety measures, and post-deployment support.\n\nRelevance: This artifact is particularly pertinent for me as a software developer and a student of the analytics of data. The usage of RAG-based as well as LLM-assisted applications has exponentially increased in order to generate context-specific data. In my case, it is a clear illustration of my skill in evaluating various types of AI and defining technical and ethical risks and applying the concepts of responsible AI in my future software and machine-learning practices.',
+  references: [
+    'Khan, A. A., Hasan, M. T., Kemell, K.-K., Rasku, J., & Abrahamsson, P. (2024). Developing Retrieval Augmented Generation (RAG) based LLM Systems from PDFs: An experience report (arXiv:2410.15944). arXiv. https://doi.org/10.48550/arXiv.2410.15944',
+    'Project: Generative AI Applications with RAG and LangChain | Coursera. https://www.coursera.org/learn/project-generative-ai-applications-with-rag-and-langchain?specialization=ibm-generative-ai-engineering',
+    'How Can E-Commerce Affect The Retail Industry? https://dxminds.com/how-can-ecommerce-affect-the-retail-industry/',
+    '4G LTE Antenna Manufacturer: A Comprehensive Guide - 2019. https://www.rfelement.com/news_c-92.html'
+  ],
+},
+{
+  title: 'The Signal Layer: Your Monthly Report on Commercial AI',
+  preview:
+    'A newsletter analyzing commercial AI applications in healthcare, finance, and legal services, with emphasis on human oversight and responsible adoption.',
+  highlights: ['Newsletter', 'Commercial AI', 'Industry analysis', 'Responsible AI'],
+  pdf: pdfNewsletter,
+  pdfTitle: 'Newsletter on Commercial Usage of AI',
+  introduction:
+    'This newsletter examines the impact of recent advancements in commercial AI across healthcare, finance, and legal services. It highlights products that are shifting from general assistance to specialized business tasks and emphasizes the importance of human oversight, governance, reliability, and responsible use.',
+  description:
+    'The artifact is a newsletter titled The Signal Layer: Your Monthly Report on Commercial AI. It analyzes three recent developments in commercial AI: OpenAI Health in ChatGPT, Payouts.com Digital Employee AI agents, and Harvey AI agents. Each section explains how these innovations are transforming workflows, shaping decision-making, enabling automation, and creating both opportunity and risk for organizations.',
+  objective:
+    'The aim was to investigate and assess AI implementations in healthcare, finance, and legal services and explore their implications for business processes and decision-making. The research was also designed to communicate complex AI insights in a concise and accessible newsletter format while considering how increasing AI autonomy may shape future business use cases.',
+  process:
+    'The research involved analyzing recent AI technologies in healthcare, finance, and legal services, selecting relevant examples of commercial AI use, and presenting how each tool supports execution, decision-making, and the transformation of ordinary business routines. I then organized the material into a newsletter structure with industry sections, a comparison component, and a conclusion.',
+  tools:
+    'Claude (Anthropic) was used for research support, idea development, and APA-style formatting assistance. The newsletter drew on company announcements, news releases, and industry publications related to OpenAI Health in ChatGPT, Payouts.com Digital Employee AI agents, Harvey legal AI agents, large language models, AI automation, and third-party AI product certification.',
+  value:
+    'Unique Value: This document goes beyond general AI trends by using concrete examples to show how AI is increasingly taking on more responsibility in commercial activities. The comparison across healthcare, finance, and legal services demonstrates that responsible adoption depends not only on technical capability but also on human review, monitoring, and governance.\n\nRelevance: This report is particularly relevant to my future career in technology as a software developer and data analytics student because it demonstrates my ability to evaluate emerging AI technologies and communicate their practical implications clearly.',
+  references: [
+    'OpenAI. (2026, July 23). Launching Health in ChatGPT. https://openai.com/index/health-in-chatgpt/',
+    'FinTech Global. (2026, July 14). Payouts.com launches Digital Employee AI agents. https://fintech.global/2026/07/14/payouts-com-launches-digital-employee-ai-agents/',
+    'Harvey. (2026, August 4). The first certified AI agents in legal: Harvey achieves AIUC-1 [Press release]. https://www.harvey.ai/newsroom'
   ],
 },
 ]
@@ -288,12 +341,7 @@ function App() {
           <div className="hero-copy">
             <h1>Creating thoughtful digital experiences that turn ideas into impact.</h1>
             <p className="hero-text">
-             Software Engineer with extensive experience designing, developing,
-               and maintaining enterprise-grade web applications across insurance, 
-               financial services, e-discovery, and healthcare domains. My professional 
-               journey is increasingly focused on integrating AI-driven capabilities 
-               into these systems to enhance decision-making, automate processes, and 
-               create more intelligent, efficient, and user-focused digital experiences.
+              As a graduate student pursuing advanced knowledge in artificial intelligence and machine learning, I am developing my leadership perspective at the intersection of software engineering, data-driven innovation, and emerging AI technologies. My academic journey has strengthened my ability to evaluate AI/ML concepts, explore responsible applications of intelligent systems, and connect technical learning with real-world business challenges. I aspire to grow into an AI/ML leader who can bridge technical expertise, continuous learning, and strategic thinking to help organizations adopt AI responsibly and effectively.
             </p>
             <p className="hero-text bio-text">
              With experience in building scalable microservices and cloud-based 
@@ -335,7 +383,19 @@ function App() {
           </div>
           <div className="value-card">
             <p>
-              I bring over eight years of experience developing enterprise software while combining expertise in artificial intelligence, machine learning, and data analytics to solve complex business challenges. I help organizations transform data into intelligent, scalable, and user-centered solutions that improve decision-making, streamline operations, and drive innovation. By combining strong technical expertise with a commitment to ethical AI and continuous learning, I deliver technology that creates meaningful value for both businesses and the people they serve.
+             I bring over eight years of experience developing enterprise software and am expanding this foundation through continued learning in artificial intelligence, machine learning, and data analytics. As I develop toward an AI/ML leadership role, I am focused on understanding how intelligent technologies can be applied to complex business challenges and transformed into practical, scalable, and user-centered solutions. Through my academic work and hands-on projects, I am strengthening my ability to evaluate AI technologies, make data-informed decisions, and consider ethical and responsible AI practices. My goal is to combine my software engineering experience with growing AI/ML expertise to contribute to innovative solutions that create meaningful value for organizations and the people they serve.
+             </p>
+          </div>
+        </section>
+
+        <section id="target-audience" className="value-section">
+          <div className="section-heading">
+            <p className="eyebrow">Target audience</p>
+            <h2>Designed for professionals and organizations shaping the future of responsible AI.</h2>
+          </div>
+          <div className="value-card">
+            <p>
+              This portfolio is designed for <strong>AI/ML professionals, technology leaders, hiring managers, academic faculty, researchers, and organizations exploring responsible AI adoption</strong>. It showcases my journey as a graduate student building on a strong software engineering foundation while developing deeper expertise in artificial intelligence, machine learning, data analytics, and emerging technologies. Through my academic work, professional experience, and AI-focused projects, I aim to demonstrate not only my technical growth but also my ability to connect AI/ML concepts with practical business challenges, ethical considerations, and future-oriented technology leadership. This portfolio reflects my goal of continuing to learn, contribute, and grow into a leader who can help organizations use AI responsibly to create meaningful and sustainable impact.
             </p>
           </div>
         </section>
